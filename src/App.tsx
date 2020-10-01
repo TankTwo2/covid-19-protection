@@ -2,45 +2,35 @@ import React from 'react';
 
 const styles: { [index: string]: any } = {
   textAlign: 'center',
+  width: '30%',
+  border: '1px solid black',
 };
 
 function App() {
   return (
     <div className="App">
-      <div className="container">
-        <br />
-        <div className="columns">
-          <div style={styles} className={'column is-one-third'}>
-            1
-          </div>
-          <div style={styles} className={'column is-one-third'}>
-            2
-          </div>
-          <div style={styles} className={'column is-one-third'}>
-            3
-          </div>
-        </div>
-        <div className="columns">
-          <div style={styles} className={'column is-one-third'}>
-            4
-          </div>
-          <div style={styles} className={'column is-one-third'}>
-            5
-          </div>
-          <div style={styles} className={'column is-one-third'}>
-            6
-          </div>
-        </div>
-        <div className="columns">
-          <div style={styles} className={'column is-one-third'}>
-            7
-          </div>
-          <div style={styles} className={'column is-one-third'}>
-            8
-          </div>
-          <div style={styles} className={'column is-one-third'}>
-            9
-          </div>
+      <br />
+      <div style={styles} className="container">
+        <div className="table-container">
+          <table className="table is-bordered is-fullwidth">
+            <tbody>
+              <tr>
+                {[1, 2, 3].map((row) => (
+                  <td>{row}</td>
+                ))}
+              </tr>
+              <tr>
+                {[4, 5, 6].map((row) => (
+                  <td>{row}</td>
+                ))}
+              </tr>
+              <tr>
+                {[7, 8, 9].map((row) => (
+                  <td>{row}</td>
+                ))}
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
