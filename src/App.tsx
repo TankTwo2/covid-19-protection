@@ -16,17 +16,23 @@ function App() {
             <tbody>
               <tr>
                 {[1, 2, 3].map((row) => (
-                  <td>{row}</td>
+                  <td>
+                    <img src={'hole.png'} alt={'hole' + row} />
+                  </td>
                 ))}
               </tr>
               <tr>
                 {[4, 5, 6].map((row) => (
-                  <td>{row}</td>
+                  <td>
+                    <img src={'hole.png'} alt={'hole' + row} />
+                  </td>
                 ))}
               </tr>
               <tr>
                 {[7, 8, 9].map((row) => (
-                  <td>{row}</td>
+                  <td>
+                    <img src={'hole.png'} alt={'hole' + row} />
+                  </td>
                 ))}
               </tr>
             </tbody>
